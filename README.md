@@ -29,6 +29,11 @@ A **practical** implementation of CCNA concepts to design a real-world enterpris
 * [x] Create VLAN 10, 20, 30, 40, 50
 * [x] Apply VLAN to certain switch ports
 * [x] Apply Trunk port between switches
+> About ~ 15% progress
+
+What is the problem? - routing and segmentation progress takes time.. need to speed things up...
+
+What's next? - apply EtherChannel to trunkport, and configure RSTP on routers then turn on PortFast and BPDU Gaurd, and apply port security to switches
 
 ## Running the projects
 
