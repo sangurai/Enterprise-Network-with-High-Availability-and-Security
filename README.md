@@ -6,7 +6,7 @@ A **practical** implementation of CCNA concepts to design a real-world enterpris
 * Cisco Packet Tracer
 ### Networking Skill Applied
 * [x] Network Devices
-* [ ] Baic Device Security( Username&Password Authentication )
+* [ ] Basic Device Security( Username&Password Authentication )
 * [x] Subnetting( VLSM )
 * [x] VLANs( Trunking, ROAS ) 
 * [x] STP with options( PortFast, BPDU ) and RSTP
