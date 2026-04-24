@@ -2,6 +2,7 @@
 A **practical** implementation of CCNA concepts to design a real-world enterprise network.
 > For detailed study notes and foundational concepts applied in this project, please refer to my [CCNA Learning Repository](https://github.com/sangurai/CCNA).
 
+![Project Image](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/dc0a4d8ad6be78a768a4d39767bc7c5744d6a134/readmeImage/Network%20Diagram.png)
 
 
 ## Video Demonstration
@@ -21,7 +22,7 @@ The IP allocation follows these conventions:
 * **Remaining IPs:** Allocated to the end devices (hosts) within the subnet.
 
 #### LAN Subnetting
-> *For detailed subnetting calculations, please refer to my [handwrittenDraft.pdf]()*
+> *For detailed subnetting calculations, please refer to my [handwrittenDraft.pdf](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/dc0a4d8ad6be78a768a4d39767bc7c5744d6a134/Blueprint/handwrittenDraft.pdf)*
 
 **Major Network Assigned:** `172.16.0.0/16`
 | VLAN | Department | Hosts | Prefix | Network Address | Virtual IP (HSRP) | First Usable | Last Usable | Broadcast Address |
