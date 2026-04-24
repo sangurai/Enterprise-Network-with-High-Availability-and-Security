@@ -79,6 +79,7 @@ Implemented ROAS:
 #### Spanning Tree Protocol (RSTP) & Load Balancing
 Enabled **Rapid Spanning Tree Protocol (RSTP)** across all Headquarter switches. Implemented VLAN load balancing by distributing the Root Bridge roles:
 * **Root Bridge Load Balancing:**
+
   ![VLAN10](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/RSTP%20VLAN10.png)
   
   * **VLAN 10:** HQDS2 acts as the Primary Root Bridge.
