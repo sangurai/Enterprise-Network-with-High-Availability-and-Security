@@ -5,8 +5,31 @@ A **practical** implementation of CCNA concepts to design a real-world enterpris
 ## Technologies
 * Cisco Packet Tracer
 ### Networking Skill Applied
+### 1. Network foundation & IP Adressing
+#### Subnetting (VLSM) and IP Address allocation convention
+- **1st** usable address of every subnets is the Virtual Router IP for HSRP
+- **Next IP** becomes physical IP on router when doing sub-interfaces
+- **the rest** addresses is assigned to hosts
+#### 1. LAN Subnetting
+**Major Network Assigned:** `172.16.0.0/16`
+| VLAN | Department | Hosts | Prefix | Network Address | Virtual IP (HSRP) | First Usable | Last Usable | Broadcast Address |
+| :--- | :--- | :---: | :---: | :--- | :--- | :--- | :--- | :--- |
+| **VLAN 50** | Guests | 200 | `/24` | `172.16.0.0` | `172.16.0.1` | `172.16.0.1` | `172.16.0.254` | `172.16.0.255` |
+| **VLAN 30** | HQ Operations | 120 | `/25` | `172.16.1.0` | `172.16.1.1` | `172.16.1.1` | `172.16.1.126` | `172.16.1.127` |
+| **VLAN 20** | Finance & HR | 60 | `/26` | `172.16.1.128` | `172.16.1.129` | `172.16.1.129` | `172.16.1.190` | `172.16.1.191` |
+| **VLAN 40** | Branch Ops| 50 | `/26` | `172.16.1.192` | `172.16.1.193` | `172.16.1.193` | `172.16.1.254` | `172.16.1.255` |
+| **VLAN 10** | IT & Admin | 30 | `/27` | `172.16.2.0` | `172.16.2.1` | `172.16.2.1` | `172.16.2.30` | `172.16.2.31` |
+
+#### 2. WAN Subnetting
+**Major Network Assigned(Private WAN):**``
+
+
+
+
+
+## What I learned
 * [x] Network Devices
-* [ ] Basic Device Security( Username&Password Authentication )
+* [x] Basic Device Security( Username&Password Authentication )
 * [x] Subnetting( VLSM )
 * [x] VLANs( Trunking, ROAS ) 
 * [x] STP with options( PortFast, BPDU ) and RSTP
@@ -19,7 +42,7 @@ A **practical** implementation of CCNA concepts to design a real-world enterpris
 * [x] NAT( Static/Dynamic )
 * [x] Port Security
 
-## What I learned
+
 ### OSPF Configuration
 ```
 Router> en
@@ -94,6 +117,7 @@ What's next? - apply NAT, DHCP and port security to the project, clean up read m
 * [x] apply NAT to HQR1
 * [x] apply PortSecurity on VLAN10, 20, 30 and 40
 * [x] implement standardACLs policy
+* [x] implement authentication to all routers and switches 
 > Progess - 100%
 
 What is the problem? - documentation takes time, need to finish the documentation fast
