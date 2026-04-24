@@ -11,13 +11,13 @@ A **practical** implementation of CCNA concepts to design a real-world enterpris
 * [x] VLANs( Trunking, ROAS ) 
 * [x] STP with options( PortFast, BPDU ) and RSTP
 * [x] EtherChannel
-* [ ] Static Routing
+* [x] Static Routing
 * [x] OSPF
 * [x] FHRP( HSRP )
-* [ ] StandardACLs
-* [ ] DHCP
-* [ ] NAT( Static/Dynamic )
-* [ ] Port Security
+* [x] StandardACLs
+* [x] DHCP
+* [x] NAT( Static/Dynamic )
+* [x] Port Security
 
 ## What I learned
 ### OSPF Configuration
@@ -88,6 +88,17 @@ What's next? - apply EtherChannel to trunkport, and configure RSTP on routers th
 What is the problem? - need to review OSPF, and speed things up real fast
 
 What's next? - apply NAT, DHCP and port security to the project, clean up read me
+
+### 24/04/2026
+* [x] apply DHCP to HQR1 and BR1
+* [x] apply NAT to HQR1
+* [x] apply PortSecurity on VLAN10, 20, 30 and 40
+* [x] implement standardACLs policy
+> Progess - 100%
+
+What is the problem? - documentation takes time, need to finish the documentation fast
+
+What's next? - write up the documentation
 
 ## Running the projects
 
