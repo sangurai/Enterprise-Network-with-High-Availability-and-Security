@@ -48,13 +48,25 @@ The IP allocation follows these conventions:
 ### 2. Layer 2 Switching & LAN Technologies
 
 #### VLANs & 802.1Q Trunking
+![Trunking HeadQuarter](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/full%20trunking.png)
+
+![Trunking Branch](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/trunkingBranch.png)
+
 * **Access Ports:** Configured on interfaces connecting directly to end devices (Hosts/PCs).
 * **Trunk Ports:** Configured on switch-to-switch and switch-to-router connections.
 
+
+
 #### EtherChannel (Link Aggregation)
+![readmeImage/trunking.png](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/trunking.png)
+
 * Bundled multiple physical links between the Distribution Switches (**HQDS1** and **HQDS2**) into a logical interface using **LACP (802.3ad)**.
 
+
 #### Inter-VLAN Routing (Router-on-a-Stick / ROAS)
+![ROAS](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/router%20on%20a%20stick.png)
+![ROASBranch](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/router%20on%20a%20stick%20branch.png)
+
 Implemented ROAS:
 * **HQ Routers (HQR1 & HQR2) Sub-interfaces:**
   * `g0/2.10` for VLAN 10
@@ -67,7 +79,11 @@ Implemented ROAS:
 #### Spanning Tree Protocol (RSTP) & Load Balancing
 Enabled **Rapid Spanning Tree Protocol (RSTP)** across all Headquarter switches. Implemented VLAN load balancing by distributing the Root Bridge roles:
 * **Root Bridge Load Balancing:**
+  ![VLAN10](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/RSTP%20VLAN10.png)
+  
   * **VLAN 10:** HQDS2 acts as the Primary Root Bridge.
+ 
+  ![https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/RSTP%20VLAN10.png](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/RSTP%20VLAN20%2030.png)
   * **VLAN 20 & 30:** HQDS1 acts as the Primary Root Bridge.
 * **PortFast & BPDU Guard:** Enabled globally on all access layer switches.
 
@@ -76,12 +92,15 @@ Enabled **Rapid Spanning Tree Protocol (RSTP)** across all Headquarter switches.
 * Configured a default static route (`0.0.0.0 0.0.0.0`) to forward network traffic toward the ISP via the outside interface (`g0/1`).
 
 #### Dynamic Routing (OSPF)
+![OSPF](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/Area0.png)
+
 * **Single Area OSPF:** All routers (HQR1, HQR2, BR1) are configured in **OSPF Area 0** (Backbone Area).
 * **Passive Interfaces:** Applied `passive-interface` on all LAN-facing ports (interfaces not connected to other routers) .
 * **Default Route Injection:** Configured `default-information originate` on HQR2.
 
 #### First Hop Redundancy Protocol (HSRP) & Load Balancing
 Configured HSRP on the Headquarter routers (HQR1 & HQR2). 
+![HSRP](https://github.com/sangurai/Enterprise-Network-with-High-Availability-and-Security/blob/3de42b111f69f7261f6e0d589050b178ef1dcb11/readmeImage/HSRP.png)
 
 * **Configured Virtual IPs (VIP):**
   * **VLAN 10:** `172.16.2.1`
