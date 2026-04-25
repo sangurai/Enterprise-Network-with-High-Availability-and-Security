@@ -8,6 +8,24 @@ A **practical** implementation of CCNA concepts to design a real-world enterpris
 ## Video Demonstration
 
 
+https://github.com/user-attachments/assets/48ba0351-e6a4-42d5-9f5c-4d79952a370f
+
+
+https://github.com/user-attachments/assets/c4574bf1-1f30-4496-bf23-76421770dd2f
+
+
+https://github.com/user-attachments/assets/165bb2c4-26fc-4c0b-9b33-039cbfec0c6c
+
+
+https://github.com/user-attachments/assets/c9d06b23-dfbd-4a8d-85f0-c59451d71fb3
+
+
+https://github.com/user-attachments/assets/7da73b4d-7b37-4d6e-9e81-2ece430b89b0
+
+
+https://github.com/user-attachments/assets/0020c9ed-d9d6-4499-a76a-cd5224f5019b
+
+
 ## Technologies
 * Cisco Packet Tracer
 
@@ -192,11 +210,18 @@ What is the problem? - documentation takes time, need to finish the documentatio
 
 What's next? - write up the documentation
 
+### 25/04/2026
+* [x] write up the documentation and upload test video
+> Progess - 100%
+
+What is the problem? - some of the port is not configured
+
+What's next? - clean up the project, write a clean resume and move to the next exciting project!
 
 ## Running the Project
 
 ### Prerequisites
-* **Cisco Packet Tracer:** Version 8.0
+* [**Cisco Packet Tracer**](https://www.netacad.com/resources/lab-downloads?courseLang=en-US):Version 9.0
 
 ### How to Open & Initialize
 1. **Download** the repository to your local machine.
