@@ -216,7 +216,7 @@ What's next? - write up the documentation
 
 What is the problem? - some of the port is not configured
 
-What's next? - clean up the project, write a clean resume and move to the next exciting project!
+What's next? - clean up the project, write a clean [resume](https://github.com/sangurai/CCNA/blob/3caadddb68cc3bd0e26ade4e01abc2572b4ffe67/Certificates/pettaySanguraiResume.pdf) and move to the next exciting project!
 
 ## Running the Project
 
